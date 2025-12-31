@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Spantaran';
+    src: url(Spantaran.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --white: #FFFFFF;
+    --balck: #000000;
+    --black-333333: #333333;
+    --black-666666: #666666;
+    --black-231F20: #231F20;
+    --red: #C3181E;
+    --green: #40AC44;
+
+    --fonts-body: "Sunflower", sans-serif;
+    --Spantaran: 'Spantaran', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--fonts-body);
+}
+
+a
+{
+  text-decoration: none;
+  color: unset;
+}
+
+

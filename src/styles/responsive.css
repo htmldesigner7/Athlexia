@@ -1,0 +1,10 @@
+@media (min-width: 1920px) {
+  .container-fuild {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .container {
+    min-width: 1600px;
+  }
+}
