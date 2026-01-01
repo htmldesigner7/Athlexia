@@ -1,0 +1,69 @@
+.venue-card {
+    border: 1px solid var(--grey-DDD);
+    border-radius: 20px;
+    padding: 22px 25px;
+}
+
+.venue-card__image img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+.venue-card__content {
+    margin-top: 28px;
+}
+
+.venue-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.venue-card__title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.venue-card__price {
+    color: var(--red);
+    margin: 0;
+}
+
+.venue-card__divider {
+    margin: 20px 0;
+}
+
+.venue-card__location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.venue-card__location p {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-333333);
+    margin: 0;
+}
+
+.venue-card__location span {
+    font-weight: 600;
+}
+
+.venue-card__rating {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.venue-card__stars {
+    display: flex;
+    gap: 4px;
+}
+
+.venue-card__reviews {
+    margin: 0;
+}

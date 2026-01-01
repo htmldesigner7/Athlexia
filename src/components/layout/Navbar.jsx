@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
+import MegaMenu from "./MegaMenu";
 
 function Navbar() {
   return (
     <nav>
       <ul>
-
         <li>
           <Link>
             <span>Find Services</span>
@@ -13,6 +13,7 @@ function Navbar() {
             </svg>
             </span>
           </Link>
+          <MegaMenu/>
         </li>
 
         <li>

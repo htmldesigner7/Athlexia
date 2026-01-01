@@ -9,7 +9,6 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={
           <>
-
             <Header />
             <Home />
             <Footer />

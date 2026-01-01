@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from './Navbar'
-import "./styles/header.css"
+import "../../styles/header.css"
 import header_logo from '../../assets/images/header-logo.svg'
 
 function Header() {
   return (
     <>
       <header className='header'>
-        <div className=" container-fluid">
+        <div className="container-fluid">
           <div className="header_wraper">
             <div className='logo'>
               <img src={header_logo} alt="header-logo" />

@@ -1,24 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;400;600&display=swap');
 
 @font-face {
-    font-family: 'Spantaran';
-    src: url(Spantaran.ttf) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Spantaran';
+  /* path relative to src/App.css -> src/assets/fonts/Spantaran.ttf */
+  src: url('./assets/fonts/Spantaran.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
-    --white: #FFFFFF;
-    --balck: #000000;
-    --black-333333: #333333;
-    --black-666666: #666666;
-    --black-231F20: #231F20;
-    --red: #C3181E;
-    --green: #40AC44;
+  --white: #FFFFFF;
+  --balck: #000000;
+  --black-333333: #333333;
+  --black-666666: #666666;
+  --grey-BBBBBB: #BBBBBB;
+  --grey-DDD: #DDD;
+  --black-231F20: #231F20;
+  --red: #C3181E;
+  --green: #40AC44;
 
-    --fonts-body: "Sunflower", sans-serif;
-    --Spantaran: 'Spantaran', sans-serif;
+  --fonts-body: "Sunflower", 'Spantaran', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --Spantaran: 'Spantaran', sans-serif;
 }
 
 * {
@@ -30,12 +33,52 @@
 body {
   font-size: 16px;
   font-family: var(--fonts-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  color: var(--black-333333);
 }
 
-a
-{
+a {
   text-decoration: none;
-  color: unset;
+  color: inherit;
 }
 
+.title_64 {
+  color: var(--black-231F20);
+  font-family: var(--Spantaran);
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+}
 
+.title_24 {
+  color: var(--black-666666);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.title_20 {
+  color: var(--black-333333);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.heade_dot {
+  color: var(--red);
+}
+
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+.com_btn {
+  display: inline-block;
+  padding: 10px 15px;
+  gap: 5px;
+  border-radius: 5px;
+  background: var(--balck);
+  color: var(--white);
+}
