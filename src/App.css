@@ -1,27 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300;400;600&display=swap");
 
 @font-face {
-  font-family: 'Spantaran';
+  font-family: "Spantaran";
   /* path relative to src/App.css -> src/assets/fonts/Spantaran.ttf */
-  src: url('./assets/fonts/Spantaran.ttf') format('truetype');
+  src: url("./assets/fonts/Spantaran.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --white: #FFFFFF;
+  --white: #ffffff;
   --balck: #000000;
   --black-333333: #333333;
   --black-666666: #666666;
-  --grey-BBBBBB: #BBBBBB;
-  --grey-DDD: #DDD;
-  --black-231F20: #231F20;
-  --red: #C3181E;
-  --green: #40AC44;
+  --grey-BBBBBB: #bbbbbb;
+  --grey-DDD: #ddd;
+  --black-231F20: #231f20;
+  --red: #c3181e;
+  --green: #40ac44;
 
-  --fonts-body: "Sunflower", 'Spantaran', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --Spantaran: 'Spantaran', sans-serif;
+  --fonts-body: "Sunflower", "Spantaran", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  --Spantaran: "Spantaran", sans-serif;
 }
 
 * {
@@ -52,6 +53,14 @@ a {
   letter-spacing: 0.72px;
 }
 
+.title_36 {
+  color: var(--white);
+  font-family:var(--Spantaran);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px; 
+}
+
 .title_24 {
   color: var(--black-666666);
   font-size: 24px;
@@ -74,6 +83,10 @@ a {
   margin-bottom: 50px;
 }
 
+.mb_100 {
+  margin-bottom: 100px;
+}
+
 .com_btn {
   display: inline-block;
   padding: 10px 15px;
@@ -81,4 +94,13 @@ a {
   border-radius: 5px;
   background: var(--balck);
   color: var(--white);
+}
+
+.com_btn_red {
+  display: inline-block;
+  padding: 10px 15px;
+  gap: 5px;
+  color: var(--white);
+  border-radius: 10px;
+  background: var(--red);
 }

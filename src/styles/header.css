@@ -5,10 +5,10 @@
 }
 
 .header {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
-nav ul {
+nav .nav_items {
   margin: 0;
   padding: 0;
   display: flex;
@@ -16,15 +16,16 @@ nav ul {
   gap: 50px;
 }
 
-nav ul li {
+nav .nav_items .nav_links {
   list-style-type: none;
 }
 
-nav ul li a {
+nav .nav_items .nav_links .nav_link {
   display: flex;
   align-items: center;
   gap: 20px;
   font-size: 18px;
+  line-height: 60px;
   color: var(--balck);
   text-transform: uppercase;
 }
@@ -40,27 +41,57 @@ nav ul li a {
 }
 
 /* ---------------------------------------------- */
-
-nav ul li {
-  position: relative;
-}
-
-.mega_menu {
+.mega-menu {
   display: none;
-  visibility: visible;
+  visibility: hidden;
   position: fixed;
   top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100vw;
-  height: auto;
   z-index: 9999;
 }
 
-.mega_menu_child {
-  background: var(--white);
-  border: 4px solid red;
-}
-
-nav ul li:hover .mega_menu {
+nav .nav_items .nav_links:hover .mega-menu {
   display: block;
   visibility: visible;
+}
+
+.mega-menu-grid {
+  background: var(--black-231F20);
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+  padding: 35px 30px;
+  border-radius: 20px;
+}
+
+.menu-col h4 {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.menu-col ul {
+  color: var(--white);
+}
+
+.menu-col ul li {
+  color: var(--white);
+  list-style: disc;
+  line-height: 26px;
+}
+
+.menu-col ul li a {
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.menu-col ul li:hover a {
+  color: var(--red);
+  transform: translateY(-2px);
 }
